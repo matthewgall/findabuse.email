@@ -95,7 +95,7 @@ function processInput(input) {
                 if (data.success == false) {
                     output = data.message;
                 } else {
-                    output = data.results[input].contacts.abuse[0];
+                    output = data[input].contacts.abuse[0];
                 }
             })
             .always(function() {
