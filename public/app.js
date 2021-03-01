@@ -78,7 +78,7 @@ function processInput(input) {
     if (input != '') {
         let output;
         $("span.fat").html('<i class="fa fa-cog fa-spin fa-fw"></i><span class="sr-only">Loading...</span>')
-        $.ajax("https://cfwho.com/api/v1/" + input)
+        $.ajax("https://api.findabuse.email/api/v1/" + input)
             .done(function(data, status, xhr) {
                 if (data.success == false) {
                     output = data.message;
