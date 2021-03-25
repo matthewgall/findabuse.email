@@ -11,12 +11,6 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: |
-          sudo apt -y install unzip wget gzip make
-      - name: Download CyberChef
-        run: |
-          make download
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
